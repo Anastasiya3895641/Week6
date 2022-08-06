@@ -1,0 +1,117 @@
+.size {
+    width: 1300px;
+    height: 696px;  
+}
+
+ #main-picture {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 720px 696px; 
+    
+ }       
+
+.conteiner1 
+{
+    display: grid;
+    width: 1300px;
+    height: 696px;
+    grid-template-areas: "header nav nav nav"
+                         "main aside aside aside"
+                          "footer footer footer footer";
+    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-rows: 100px 1fr 80px;
+    }
+
+    .header {
+grid-area: header;
+padding-top: 30px;
+}
+
+.nav {grid-area: nav;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "menu1 menu2 menu3";
+    grid-template-columns: 25% 30% 27%;
+    grid-template-rows: 80%;
+    justify-items: flex-end;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    }
+
+.menu {font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-decoration: none;
+text-transform: uppercase;
+
+color: rgb(255, 255, 255);}
+
+.menu:hover {text-decoration: underline;
+            }
+
+.main {
+    grid-area:main ;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "h1"
+                         "p"
+                         "button";
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 20% 30%;
+    justify-items: flex-start;
+    align-content: flex-end;
+    padding-left: 80px;
+    
+}
+
+h1 {
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 60px;
+}
+
+p {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;}
+
+.button {
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 14px 14px;
+width: 254px;
+height: 54px;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+
+text-transform: uppercase;
+cursor: pointer;
+color: #FFFFFF;
+background: #68B738;
+border: #68B738;
+}
+
+.aside {
+    grid-area:aside ;
+    position: relative;
+    right: 100px; ;
+width: 552px;
+height: 499px;
+    }
+
+.footer {
+    grid-area: footer;}
